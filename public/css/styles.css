@@ -1,0 +1,98 @@
+@font-face {
+    font-family: pt-serif-regular;
+    src: url(../fonts/PTSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: pt-serif-bold;
+    src: url(../fonts/PTSerif-Bold.ttf);
+}
+
+@font-face {
+    font-family: pt-serif-bold-italic;
+    src: url(../fonts/PTSerif-BoldItaic.ttf);
+}
+
+@font-face {
+    font-family: open-sans-regular;
+    src: url(../fonts/open-sans-regular.ttf);
+}
+
+body{
+    font-family: open-sans-regular;
+    background-color: #FED8B1;
+    color: #6F4E37;
+    height: 100vh;
+}
+
+
+a{
+    cursor: pointer;
+    color: #FED8B1;
+}
+
+p, .post-datetime{
+    color: #ECB176;
+}
+
+::placeholder{
+    color: #6F4E37;
+}
+
+#featured-post-title{
+    font-family: pt-serif-bold-italic;
+}
+
+#other-post-title{
+    font-family: pt-serif-bold;
+}
+
+.other-posts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-date{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card{
+    background-color: #6F4E37;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.card-title{
+    font-family: pt-serif-bold;
+    color: #FED8B1;
+}
+
+.publish-title, .menu-title{
+    font-family: pt-serif-bold;
+}
+
+.footer{
+    background-color: #6F4E37;
+}
+
+.footer-links{
+    color: #FED8B1;
+}
+
+.pagination-bg{
+    background-color: #A67B5B;
+    color: #FED8B1;
+}
+
+.pagination-bg:hover{
+    background-color: #FED8B1;
+    color: #6F4E37;
+}
