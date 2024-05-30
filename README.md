@@ -34,8 +34,8 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
     ```bash
-   git clone https://github.com/yourusername/bloghaven.git
-   cd bloghaven
+   git clone git@github.com:TDila/Capstone-BlogSite-PostPulse.git
+   cd postpulse
 
 2. Install the necessary dependencies:
     npm install
