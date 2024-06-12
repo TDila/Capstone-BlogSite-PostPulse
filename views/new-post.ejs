@@ -24,7 +24,40 @@
             <%- include("partials/header.ejs") %>
 
             <div class="row mb-5" style="margin-top: 100px;">
-                <form action="add-post" method="post">
+                <% 
+                    if(locals.post){
+                        %>
+                        <form action="/save-post?id=<%=post.id%>" method="post">
+                    <div class="col-12 d-flex flex-row justify-content-between">
+                        <h2 class="publish-title">Edit Your Post</h2>
+                        <button type="submit" class="btn"
+                            style="background-color: #6F4E37; color: #FED8B1;">Save</button>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <label for="exampleFormControlInput1"
+                                    class="form-label">Post Title</label>
+                                <input type="text" class="form-control"
+                                    id="exampleFormControlInput1"
+                                    placeholder="Your title..." name="title" value="<%=post.title%>"/>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="exampleFormControlTextarea1"
+                                    class="form-label">Enter your
+                                    content</label>
+                                <textarea class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    placeholder="Your content..." rows="10"
+                                    style="color: #6F4E37;" name="content"><%=post.content%></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                        <%
+                    }else{
+                        %>
+                        <form action="add-post" method="post">
                     <div class="col-12 d-flex flex-row justify-content-between">
                         <h2 class="publish-title">Publish Your Post</h2>
                         <button type="submit" class="btn"
@@ -63,6 +96,10 @@
                         </div>
                     </div>
                 </form>
+                        <%
+                    }
+                    
+                    %>
             </div>
 
         </div>

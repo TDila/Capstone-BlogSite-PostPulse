@@ -30,13 +30,13 @@
             posts.forEach(post => {
               %>
               <!-- post-card  -->
-        <div class="card col-10 col-md-5" onclick="viewPost('<%=post.id%>');">
+        <div class="card col-10 col-md-5">
           <img src="" class="card-img-top" alt="">
           <div class="card-body">
             <h2 class="card-title"><%=post.title%></h2>
             <p class="card-text"><%=post.content.split('.')[0]%></p>
             <div class="d-flex flex-row justify-content-between">
-              <a href="#" class="link-underline">Read More...</a>
+              <a href="#" class="link-underline" onclick="viewPost('<%=post.id%>');">Read More...</a>
               <span class="post-datetime"><%=post.datetime%></span>
             </div>
           </div>

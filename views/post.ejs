@@ -27,13 +27,17 @@
         <% 
           if(locals.post){
             %>
+            <div class="d-flex flex-row justify-content-end">
+              <a href="new-post?id=<%=post.id%>" class="btn"
+                            style="background-color: #6F4E37; color: #FED8B1;">Edit</a>
+            </div>
             <div class="d-flex flex-row justify-content-between align-items-center">
-            <h1><%=post.title%></h1>
-            <span style="color: #A67B5B;"><%=post.datetime%></span>
-        </div>
-        <div class="row">
-            <p style="text-align: justify; color: #6F4E37;"><%=post.content%></p>
-        </div>
+              <h1><%=post.title%></h1>
+              <span style="color: #A67B5B;"><%=post.datetime%></span>
+            </div>
+            <div class="row">
+              <p style="text-align: justify; color: #6F4E37;"><%=post.content%></p>
+            </div>
             <%
           }  
           
